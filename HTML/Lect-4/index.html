@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Group Selector */
+        table, th, td{
+            border: 1px solid orange;
+            border-collapse: collapse;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+
+    <title>Tables</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <!-- Table -->
+            <!-- No. of tr is the no. of rows and No. of th/td is the no. column in each row -->
+            <table style="margin-left: auto; margin-right: auto; width: 50%;">
+                <caption>Tecnology Table</caption>
+                <!-- tr Table row -->
+
+                <colgroup>
+                    <col span="1" style="background-color: green; width: 200px"/>
+                    <col span="1" style="background-color: yellow"/>
+                    <col span="1" style="background-color: green; width: 200px"/>
+                </colgroup>
+
+                <thead>
+                    <tr></tr>
+                    <!-- th Table header -->
+                    <!-- First row of table is always heading of the table ex. SL no, Date, Time etc -->
+                    <th>SL. No</th>
+                    <th>Technology Name</th>
+                    <th>Year</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- td Table date/date cell -->
+                        <td>1</td>
+                        <td>HTML</td>
+                        <td>1991</td>
+                    </tr>
+                    
+                    
+
+                    <tr style="background-color: pink;">
+                        <td>2</td>
+                        <td>CSS</td>
+                        <td>1993</td>
+                    </tr>
+                   
+
+                    <tr>
+                        <td>3</td>
+                        <td>JavaScipt</td>
+                        <td>1995</td>
+                    </tr>
+                    
+                </tbody>
+
+            </table>
+
+            <table>
+                <caption>
+                  Food menu
+                </caption>
+          
+                <thead>
+                  <tr>
+                    <th>S. NO.</th>
+                    <th>Veg</th>
+                    <th>Meat</th>
+                    <th>Price</th>
+                    <th>Beverages</th>
+                    <th>Dessert</th>
+                  </tr>
+                </thead>
+          
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td colspan="2">Briyani</td>
+                    <!-- <td>Briyani</td> -->
+                    <td>250</td>
+                    <td>Cold Drink</td>
+                    <td>Ice Cream</td>
+                  </tr>
+          
+                  <tr>
+                    <td>2</td>
+                    <td>Pizza</td>
+                    <td>Chicken Tikka</td>
+                    <td>400</td>
+                    <td rowspan="2">Juice</td>
+                    <td>Pastries</td>
+                  </tr>
+          
+                  <tr>
+                    <td>3</td>
+                    <td>Dosa</td>
+                    <td>Chicken Burger</td>
+                    <td>200</td>
+                    <!-- <td>Juice</td> -->
+                    <td>Caramel Custard</td>
+                  </tr>
+          
+                  <tr>
+                    <td>4</td>
+                    <td>Uttapam</td>
+                    <td>Fish and Chips</td>
+                    <td>250</td>
+                    <td>Shake</td>
+                    <td>Brownie</td>
+                  </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
