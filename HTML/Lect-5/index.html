@@ -4,9 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <style>
+        input[type="text"], textarea{
+            width: 85%;
+            border: none;
+            border-bottom: 2px solid #3C1053FF;
+            border-left: 2px solid #3C1053FF;
+        }
+        label{
+            color: #3C1053FF;
+            font-size: 18px;
+            font-style: bold;
+        }
+
+        input[type="reset"], button{
+            background-color: #3C1053FF;
+            border: none;
+            color:  #D7C49EFF;
+            padding: 8px 5px;
+            cursor: pointer;
+        }
+        form{
+            margin-right: auto;
+            margin-left: auto;
+            width: 750px;
+            background-color: #D7C49EFF;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+    
+    <title>Form</title>
 </head>
 <body>
-    
+    <header></header>
+
+    <main>
+        <section>
+            <form action="./submit.html" method="get" target="_self" autocomplete="on">
+
+                <p>
+                    <label for="fname">Enter First Name</label>
+                    <input type="text" name="fname" placeholder="First Name" value="" required>
+                </p>
+                
+                <p>
+                    <label for="mname">Enter Middle Name</label>
+                    <input type="text" name="mname" placeholder="Middle Name" value="" >
+                </p>   
+
+                <p>
+                    <label for="mname">Enter Last Name</label>
+                    <input type="text" name="lname" placeholder="Last Name" value="" required>
+                </p>
+
+                <p>
+                    <label for="age">Enter Age*</label>
+                    <input type="number" name="age" placeholder="Please enter age" value="" required autofocus>
+                </p> 
+
+                <p>
+                    <label for="contact">Contact Number*</label>
+                    <input type="tel" name="contact" placeholder="Please enter contact number" value="" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                </p>
+
+                <!-- Radio Button -->
+                <p>
+                    <input type="radio" name="genfer" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="genfer" value="female">
+                    <label for="female">Female</label>
+                </p>
+
+                
+                <!-- Select Time & Date -->
+                <p>
+                    <label for="birthday">Birthday</label>
+                    <input type="date" name="birthday">
+                </p>
+
+                <p>
+                    <label for="time">Time</label>
+                    <input type="time" name="time">
+                </p>
+
+                <!-- Select from Range -->
+                <p>
+                    <label for="exp">Exprience</label>
+                    <input type="number" name="exp" min="1" max="10">
+                </p>
+
+                <p>
+                    <label for="price">Price</label>
+                    <input type="range" name="price" min="1" max="1000">
+                </p>
+
+                <!-- File Seletion -->
+                <p>
+                    <label for="files">Browse file</label>
+                    <input type="file" name="files">
+                </p>
+
+                <!-- Checkbox -->
+                <p>
+                    <input type="checkbox" name="term">
+                    <label for="term">I agree to all <a href="#">T&C</a></label>
+                </p>
+
+                <!-- Text Box  -->
+                <p>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="About yourself."></textarea>
+                </p>
+
+                <p>
+                    <label for="country">Select Country</label>
+                    <select name="country" >
+                        <optgroup label="Country">
+                            <option value="india">India</option>
+                            <option value="saudi">Saudi Arabia</option>
+                            <option value="usa">USA</option>
+                            <option value="dubai">Dubai</option>
+                            <option value="russia">Russia</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <!-- Editable Dropdown -->
+                <p>
+                    <input type="text" name="tech" list="tech">
+                    <datalist id="tech">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <button>Submit</button>
+                    <input type="reset" >
+                </p>
+
+            </form>
+
+            <form action="">
+                <fieldset>
+                    <legend>Log in</legend>
+                    <label for="email">Enter email</label>
+                    <input type="email" name="email">
+
+                    <label for="pwd">Enter password</label>
+                    <input type="password" name="pwd">
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <p>
+                        <label for="name">Enter Name</label>
+                        <input type="text" name="name" placeholder=" Name" value="" required>
+                    </p>
+
+                    <p>
+                        <label for="contact">Contact Number*</label>
+                        <input type="tel" name="contact" placeholder="Please enter contact number" value="" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer></footer>
 </body>
 </html>
