@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #f2f6ff;  
+        }
+
+        header{
+            padding: 16px 78px;
+            background: #fff;
+            margin: 0;
+        }
+
+        #head{
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        h1{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #logo{
+            color: #0084ff;
+            font-size: 32px;
+            width: 130px;
+        }
+        #tagLogo{
+            margin: 0;
+            font-weight: 500;
+            font-family: raleway;
+            font-style: italic;
+        }
+
+        #drop{
+            margin: 0;
+            display: flex;
+            margin-left: 90px;
+        }
+        #dropText{
+            color: #000;
+            font-family: Open Sans,sans-serif;
+        }
+        
+        #dropIcon{
+            padding-left: 8px;
+        }
+
+        #icon{
+            width: 13px;
+            height: 6px;
+            padding-top: 25px;
+        }
+
+        main{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 70%;
+        }
+
+        #trend{
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            margin: 0;
+        }
+        .cont{
+            display: flex;
+            width: 90%;
+            
+        }
+
+        #contBox{
+            margin-bottom: 20px;
+            font-size: 16px;
+            padding-top: 16px;
+            
+        }
+
+        #fL{
+            display: flex;
+        }
+
+        #filter{
+            width: 25px;
+            height: 25px;
+            padding-top: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #filterText{
+            font-size: 14;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        #cat{
+            width: 90%;
+        }
+
+        button{
+            width: auto;
+            color: #0084ff;
+            padding: 6px 14px;
+            border-radius: 15px;
+            border: 1px solid #0084ff;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            background-color: #f2f6ff;
+        }
+
+        #activeBtn{
+          color: #fff;
+          background-color: #0084ff;  
+        }
+
+        .item{
+            width: 33.3%;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid rgba(0,168,255,.3);
+            box-shadow: 5px 5px 5px 5px lightblue;
+        }
+
+        .imgSec{
+            height: 176px;
+            width: 100%;
+        }
+        
+        img{
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .textSec{
+            padding: 10px 24px;
+
+        }
+
+        .itemTit{
+            font-size: 18px;
+            text-align: left;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .autCont{
+            padding-top: 4px;
+        }
+
+        .autSec{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+        
+        .autCont p{
+            margin: 0;
+        }
+
+        #author{
+            color: #0096ff;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        #date{
+            color: rgba(0,0,0,0.7);
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .info{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.43;
+            color: rgba(0,0,0,.6);
+            margin: 4px 0;
+        }
+
+        footer{
+            background-color: #172146;
+            padding: 80px 16%;
+        }
+    </style>
+
+    <title>Edyoda Stories</title>
+</head>
+<body>
+    <header>
+        <div id="head">
+            <div >
+                <h1 id="logo">EDYODA</h1>
+                <p id="tagLogo">Stories</p>
+            </div>
+            <div id="drop">
+                <div>
+                    <p id="dropText">Explore Categories </p> 
+                </div>
+                <div id="dropIcon">
+                    <img id="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHhJREFUeNpiYGBguAPE/f///2fAh0FqgPguiBEDxC+BeDUQM2NRyAyVewlWCxW0B+L7QHwAiHmRFPNCxUBy9mAxJElVIL4MxBeBWB6KL0LFVOHq0KwXAuJDQHwPikFsIWQ1jFCFcMDIyMgGpFZAuRFA+V/I8gABBgD8EGd4shdx5wAAAABJRU5ErkJggg==" alt="Icon">
+                </div>
+            </div>
+            
+        </div>
+        
+    </header>
+
+    <main>
+        <div>
+            <h1 id="trend">Trending Posts</h1>
+            
+            <div id="contBox">
+                <div id="fL">
+                    <img id="filter" alt="Filter Icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAbFBMVEUAAAA1gME1gME1f8A1gME1gMExd7Q0f8AxeLYzfb00fr80f8Aze7oze7o1gMA0fr4zfLwzfb0zfb0yerg0fb00f8AzfLszfLwzfr40f780f8Azfb00f8A0f8AzfLwzfr81gME0fr4zfLs1gMEkRxAZAAAAI3RSTlMAHOP9f/oT1RAO281OROfhFaSUSkCwnpmOcTfFim9YB/AmGRclE4kAAAF9SURBVGje7dfrboJAEAXgA7jLXRAExRu2vP87No1NJjYpexm3SZv5/vgD9QB7mCwQQggh/rI2YtCwUpUxw7mGhTZdWMoWZlHMC4kjmL0Xv3Al8zHhZCQTbOid159/fRwyWIlK+p2rQcPSvnBLoa+mJ1jrG7+bVdRwcLsvHpoeLuaLepxh4nAd9xvc5F1ityx0Juoyw5EeXZely2DAL/JOw8M+NafQ4TKCl7pxeED28FRtrctbw9uk1u4YHdhW8Jd39LislXcCRzZalEt1OVj0YF76MQPTyVjkQYOtprlvmO4cfbysoOnOc6UiG6Y7Q36kIn8v7xWvkh1+mPvqmIPBtIExb0385z5/ups3MM+2b3ixi3nXy7eREAmREAmREAmRkPWQsw4Xkiz05hMqJEkoI0wIZTQVEC7k8VH0CGDztB5pDRKkXfTWHjJkOMGAX+Fdi0CowqMGCROiDpQRKkR1GcLZ0PtbODf1OUquOULKpzQ+VwitjTIIIYQQ/9wHYyfu5wm8dM0AAAAASUVORK5CYII=">
+                    <p id="filterText">Filter by Category</p>
+                </div>
+    
+                <div id="cat">
+                    <button id="activeBtn">All</button>
+                    <button>Artificial Intelligence</button>
+                    <button>Cloud Computing</button>
+                    <button>DevOps</button>
+                    <button>Programming Languages</button>
+                    <button>Mobile Application Development</button>
+                    <button>Technology and Tools</button>
+                    <button>Get a Job in a Tech Company</button>
+                    <button>Other</button>
+                </div>
+            </div>
+            
+            
+
+            <div class="cont">
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Introduction To A Machine Learning Online Course</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 23 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                We have had an insight into Artificial Intelligence. Well, one of its subfields is machine learning and this introduction will help you get a fair idea of what a machine learning online course holds. To begin with, one must understand what machine learning is. Basically <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">LAMP Stack Vs MEAN stack: Choosing the right platform for your web <span>...</span></p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 24 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                In today’s dynamic world, rapid web application development with a smooth user interface that can adapt to specific features is the main business requirement. Many organizations around the world that intensely depend on programming for their everyday business <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/4.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Impact of Cloud Computing in various industries</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 24 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                Cloud computing has been rapidly gaining pace in the world of information technology. It has been observed that over 90% of global enterprises are using cloud technology as part of their business. Every industry has its own technology dynamics designed to suit its infrastructure. <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont">
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/3.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Challenges of Machine Learning in Big Data Analytics</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 24 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                Machine Learning is a subset of artificial intelligence which is an important part of computer science. The revolution of Big Data promises to transform the way we work, live and think by enabling the process of optimization, discovering insights and improved  <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/5.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Breaking the Myths around Cybersecurity</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 26 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                As the dependency on online platforms is increasing daily, cybersecurity is becoming an important concern for all companies today. The number of cyberattacks is ever-rising even after adopting every security measure possible by businesses. Cyber attackers are developing advancing technologies that are continuing to cause more damage. <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/7.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Importance of Data Backup and Recovery in the IT industry</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 26 Aug 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                A business must always introspect the areas where they lack in order to bring about a positive change in the work environment. One of the main precautions or a contingency plan that is necessary for every business and especially industries working with clouds, networks and <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont">
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/automation-testing-an-overview-2.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">What is Web Scraping?</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 25 Sep 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                Simply put, web scraping is one of the tools developers use to gather and analyze information from the Internet.
+Some websites and platforms offer application programming interfaces (APIs) which we can use to access information in a structured way, but others might not. While APIs are certainly becoming the standard way<span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/what_is_isa_blog_1.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">What is Income Share Agreement?</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 14 Oct 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                The term Income Share Agreement has been around for a long time since 1955 to be precise. Surprised, eh? It was first introduced by Milton Friedman, an American economist, and statistician who strongly believed in “free-market capitalism”. In the last few months, there has been a lot of buzz around it, particularly among college <span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="imgSec">
+                        <img src="https://edyoda.s3.amazonaws.com/media/blog-images/practical_machine_learning_1.png" alt="">
+                    </div>
+                    <div class="textSec">
+                        <p class="itemTit">Practical Machine Learning with Python and Keras</p>
+                        <div class="autSec">
+                            <div class="autCont">
+                                <p id="author">Edyoda</p> 
+                            </div>
+                            <div>
+                                <p id="date"> 	&nbsp; | 16 Oct 2019</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="info">
+                                Machine learning is a field of artificial intelligence that uses statistical techniques to give computer systems the ability to “learn” (e.g., progressively improve performance on a specific task) from data, without being explicitly programmed. Think of how efficiently (or not) Gmail<span>...</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
