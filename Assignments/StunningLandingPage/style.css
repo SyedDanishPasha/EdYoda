@@ -1,0 +1,144 @@
+body{
+    margin: 50px;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+}
+
+#logoImg{
+    width: 200px;
+    height: 70px;
+}
+
+#menu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    padding: 25px;
+}
+
+.btnMenu{
+    border: none;
+    background-color: #ffff;
+    color: gray;
+    font-weight: 700;
+    outline: none;
+}
+
+.btnMenu:hover{
+    border-bottom: 3px solid blue;
+    color: black;
+    font-weight: 700;
+    outline: none;
+}
+
+.btnYA{
+    border-radius: 50px;
+    border: none;
+    background-color: #FFD8DB;
+    color:  #A389CC;
+    font-weight: 700;
+    width: 200px;
+    height: 70px;
+}
+
+.btnYA:hover{
+    background-color: #A389CC;
+    color: #FFD8DB;
+    font-weight: 700;
+}
+
+.mainSec{
+    display: flex;
+}
+
+
+h1{
+    font-size: 135px;
+    margin-bottom: 15px;
+}
+
+main{
+    display: flex;
+}
+
+#mainSec{
+    width: 40%;
+    margin-left: 140px;
+}
+
+#mainSec p {
+    font-size: 32px
+}
+
+.mainBtn{
+    display: flex;
+    align-items: center;
+}
+
+.mainBtn img{
+    padding: 5px;
+}
+
+.btnNA{
+    border-radius: 30px;
+    border: none;
+    background-color: #5243C0;
+    color:   #ffffff;
+    width: 200px;
+    height: 70px;
+    font-weight: 700;
+}
+
+.btnNA:hover{
+    background-color: rgb(247, 234, 234);
+    color:   #5243C0;
+}
+
+.arrow{
+    margin-left: 15px;
+}
+
+.mainPro{
+    width: 75%;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.mainPro div{
+    padding: 5px;
+}
+
+.profile{
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    width: 110%;
+    height: 65px;
+    padding: 0;
+    outline: none;
+    margin-left: 20px;
+    background-color: ghostwhite; 
+    overflow: hidden; 
+    font-size: 10px;
+    font-weight: 500;
+    justify-content: space-evenly;
+}
+
+
+.profile:hover{
+    background-color: #ffffff;
+    box-shadow: rgba(6, 4, 10, 0.4) 0 6px 10px, rgba(7, 6, 10, 0.3) 0 7px 13px -3px, #e7e7ee 0 -3px 0 inset;
+}
+
+.mainImg{
+    margin-top: 100px;
+    margin-left: 50px;
+    object-fit: fill;
+}
