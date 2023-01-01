@@ -2,7 +2,7 @@
 
 // alert('You have successfully Logged In')
 
-//  document.write('<h1>Welcome User</h1>')
+// document.write('<h1>Welcome User</h1>')
 
 // console.log('User'); //Specific used for debugging only 
 

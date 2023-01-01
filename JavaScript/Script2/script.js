@@ -113,3 +113,4 @@ console.log(a <= b);
 console.log(a == b && a === b); // checks if both the conditions are correct (TT-T) (TF-F) (FF-F)
 console.log(a == b || a === b); // check if either of the condition are correct (TT-T) (TF-T) (FF-F)
 console.log(!(a === b)); // checks the condition and reverse 
+
